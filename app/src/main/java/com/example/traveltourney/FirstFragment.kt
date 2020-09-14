@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 
 /**
@@ -27,5 +28,16 @@ class FirstFragment : Fragment() {
         view.findViewById<Button>(R.id.button_first).setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+    }
+
+    fun writeExampleString(view: View) {
+        // This function changes the text in the first fragment
+        val newText = "This is the new text"
+
+        // Get first fragment text view
+        val firstFragmentTextView = view.findViewById<TextView>(R.id.textview_first)
+
+        // Write to view
+        firstFragmentTextView.setText(newText)
     }
 }
