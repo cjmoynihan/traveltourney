@@ -5,9 +5,9 @@ class Player {
     String name;
     int ID;
 
-    Player(String name,int ID){
+    Player(String name){
         this.name = name;
-        this.ID = ID;
+//        this.ID = ID;
     }
 
     public String getName() {
@@ -18,13 +18,13 @@ class Player {
         this.name = name;
     }
 
-    public int getID() {
-        return ID;
-    }
+//    public int getID() {
+//        return ID;
+//    }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
+//    public void setID(int ID) {
+//        this.ID = ID;
+//    }
 
     public String toString(){
         return name + " " + ID;
